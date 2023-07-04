@@ -5,22 +5,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Button layoutX="450.0" layoutY="461.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Start" />
-      <Button layoutX="744.0" layoutY="461.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Stop" />
-      <Button layoutX="155.0" layoutY="461.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Reset" />
-      <Label alignment="CENTER" layoutX="94.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" text="00">
+      <Button fx:id="buttonStart" layoutX="450.0" layoutY="461.0" mnemonicParsing="false" onAction="#onButtonStartAction" prefHeight="50.0" prefWidth="100.0" text="Start" />
+      <Button fx:id="buttonStop" layoutX="744.0" layoutY="461.0" mnemonicParsing="false" onAction="#onButtonStopAction" prefHeight="50.0" prefWidth="100.0" text="Stop" />
+      <Button fx:id="buttonReset" layoutX="155.0" layoutY="461.0" mnemonicParsing="false" onAction="#onButtonResetAction" prefHeight="50.0" prefWidth="100.0" text="Reset" />
+      <Label fx:id="labelMinutos" alignment="CENTER" layoutX="94.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" text="00">
          <font>
             <Font size="96.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="399.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" text="00">
+      <Label fx:id="labelSegundos" alignment="CENTER" layoutX="399.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" text="00">
          <font>
             <Font size="96.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="693.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" text="00" textAlignment="CENTER">
+      <Label fx:id="labelMilissegundos" alignment="CENTER" layoutX="693.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" text="00" textAlignment="CENTER">
          <font>
             <Font size="96.0" />
          </font>
