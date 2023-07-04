@@ -1,10 +1,10 @@
-package controllers;
+package crontoller;
 
-import gui.util.Alerts;
+import gui.utils.Alerts;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.Alert.AlertType;
 
 public class ViewController {
 	@FXML
